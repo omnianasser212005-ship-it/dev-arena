@@ -1,0 +1,422 @@
+/* .navbar{
+    display: flex;
+   margin:0px;
+   height: 80px;
+   width:1320px;
+   box-sizing: border-box;
+   justify-content: space-between;
+   border: 1.2px solid rgb(178, 176, 176) ;
+   margin-left:25% ;
+}
+.elday{
+    text-align: left;
+    display:inline-block;
+    margin:-10px 0px 20px 10px ;
+    padding:5px ;
+    
+}
+.btnaddtask{
+
+    padding: 5px;
+    margin-top:15px ;
+    margin-bottom: 80px;
+    background-color:#22C55E;
+    width: 110.5px;
+    height: 36px;
+    border-radius: 6px;
+   
+}
+.aside{
+    margin-top:-200 ;
+    margin-left:-5px ;
+    background-color: rgb(205, 205, 205);
+    height:1300px ;
+    width: 200px;
+}
+.app{
+    height:0px ;
+    width:800px ;
+} */
+.aside {
+
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2.2px solid rgb(209, 209, 209);
+
+
+}
+
+.navbar {
+
+    display: flex;
+    height: 60px;
+    width: 1200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 0.1px solid rgba(228, 228, 228, 0.405);
+    padding-top: 0%;
+    margin-top: -10px;
+    align-items: center;
+    margin-left: 244px;
+
+}
+
+.btnaddtask {
+
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    background-color: #22C55E;
+    width: 110.5px;
+    height: 36px;
+    border-radius: 9px;
+    border: 2px rgb(203, 192, 192);
+}
+
+
+.h3 {
+    display: flex;
+    font-weight: bold;
+    unicode-bidi: embed;
+    margin-bottom: 2px;
+}
+
+
+.para {
+    font-size: 13px;
+    color: #9f9f9f;
+    margin-bottom: px;
+    padding: 0px;
+    margin-top: -0.5px;
+}
+
+.elday {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.headday {
+    margin-bottom: 0px;
+    padding: 0px;
+
+}
+
+.asdicon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: none;
+    margin: 1px 1px;
+
+
+
+}
+
+.text {
+    display: flex;
+    
+    border: 3px solid rgb(252, 252, 252);
+    /* height: 20px; */
+    /* width: 1250px; */
+    margin-left: 10px;
+    margin-right: 160px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.date {
+    display: flex;
+    border: 0.01px solid rgb(255, 255, 255);
+    height: 12px;
+    width: 115px;
+    margin-top: 30px;
+ margin-top: 47px;
+    color: #920b0b;
+    background: none;
+
+
+}
+
+.card {
+    display: flex;
+ 
+    border: 3px solid #e6eae89c;
+    border-radius: 8px;
+    height: 80px;
+    width: 1200px;
+    margin-top: 40px;
+    box-shadow: 1 20px 50px rgb(9, 9, 9);
+    margin-left: 240px;
+    margin-right: 0px;
+    margin-bottom: -30px;
+
+}
+
+
+
+.title {
+     display:flex;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    font-size: 15px;
+    width: 200px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: none;
+    /* height: 1px; */
+ 
+   
+    
+   
+}
+
+p{
+    display: flex;
+}
+span{
+display: flex;
+    
+}
+.main {
+    margin-right: 10px;
+
+
+
+}
+
+.web {
+    border-bottom: 2px solid #e7e7e7;
+    margin-left: 15px;
+font-size: 15px;
+
+}
+
+/* نافذة البوب أب */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 380.20px;
+    height: 690px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.priority-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -10px;
+    font-size: 16px;
+}
+
+.priority-container button {
+    /* cursor: pointer; */
+    /* background-color: #e1bd7a; */
+    margin-top: 10px;
+    justify-content: space-between;
+    border: none;
+    /* background-color: #da9f5f; */
+
+}
+
+.priority {
+    height: 40px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #f6f6f6;
+
+}
+
+.star {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 0px;
+    color: rgb(255, 205, 25);
+    margin-left: 1005px;
+    margin-top: 20px;
+
+}
+
+/* .star:hover {
+  transform: scale(1.2);
+} */
+.same {
+    background: none;
+    height: 30px;
+    width: 180px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: #ccc 0px;
+    margin-top: 0px;
+    display: flex;
+    gap: 7px;
+
+}
+
+.samee {
+    margin-top: 20px;
+    background: none;
+    height: 30px;
+    width: 180px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: #ccc 0px;
+    display: flex;
+    gap: 7px;
+
+}
+
+.okBtn {
+    height: 16px;
+    width: 16px;
+    margin-top: 25px;
+    margin-right: 15px;
+    border-radius: 6px;
+
+    border: 2px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.okBtn.is-done {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #fff;
+    box-shadow: 0 0 0 6px rgba(34, 197, 94, .15);
+}
+
+.headform {
+    margin-right: 250px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.-head {
+
+    /* width: 400px;
+   font-size: 12px; */
+    margin-top: -10px;
+    margin-left: -50px;
+
+    /* position: absolute; */
+    /* width: 0px; */
+
+    top: -0.6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8b8a8a;
+
+}
+
+.rightfont {
+    font-size: 15px;
+    margin-right: 320px;
+    
+}
+.select{
+
+
+    margin-top: -00px;
+}
+
+.add{
+    width: 230px;
+    height: 25px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: -15px;
+      background: #95d6ad;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+}
+.Cancel{
+
+background:none;
+border: #ddd solid 1px;
+border-radius: 4px;
+width: 90px;
+height: 25px;
+
+}
+.status{
+
+    margin-top: 45px;
+    margin-right:250px;
+    font-size: 12px;
+    color: #717171;
+    margin-left:-165px;
+}
+
+.star{
+
+    margin-left: 800px;
+}
+.st{
+
+margin-top: -10px;
+margin-left: -40px;
+
+}
+.da{
+
+margin-top: -132px;
+margin-left: -90px;
+
+}
+.select{
+background: none;
+width: 380px;
+height: 35px;
+border: none;
+border: #b6b6b6 solid 1px;
+
+}
+
+.star {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: gray; /* اللون العادي */
+  transition: 0.2s;
+}
+
+.star.active {
+  color: gold; /* اللون لما تكون النجمة مفعّلة */
+  transform: scale(1.2); /* تكبر شويه لما تتفعّل */
+}

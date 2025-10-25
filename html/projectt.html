@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day</title>
+    <link rel="stylesheet" href="../css/projectt.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+
+<body>
+
+    <!-- الشريط الجانبي -->
+    <aside class="aside">
+        <div class="web">
+            <h1>MyDay Web</h1>
+        </div>
+
+        <div class="asdicon">
+
+            <div class="my-day"><button class="samee" onclick="myday()"><i class="fa-solid fa-sun styicon"></i>my
+                    day</button></div>
+            <div class="important"> <button class="same" onclick="filterImportant()">
+                    <i class="fa-solid fa-star styicon"></i>important</button> </div>
+            <div class="planned"> <button class="same" onclick="filterPlanned()">
+                    <i class="fa-solid fa-calendar styicon"></i>planned</button></div>
+            <div class="AllTasks"> <button class="same" onclick="print_all()">
+                    <i class="fa-solid fa-square-check styicon"></i> All Task</button></div>
+
+
+        </div>
+    </aside>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="main">
+
+        <header>
+            <nav class="navbar">
+                <div class="elday">
+                    <img src="../images/Container (2).png" alt="icon">
+                    <div>
+                        <h3 class="headday">My Day</h3>
+                        <p class="para">Tuesday, October 16</p>
+                    </div>
+                </div>
+
+                <button class="btnaddtask" onclick="openAddTask()">+ Add Task</button>
+            </nav>
+
+
+        </header>
+
+
+        <div id="tasks-container"></div>
+
+    </div>
+
+
+
+    <div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- 
+     <ul class="card"><div>
+         <li class="text"> <button class="okBtn" type="button" aria-pressed="false"></button>
+         <div class="title" style="width: 1290px; margin-left: 0px; "> title:
+         <input type="date" style=" margin-left: 0px;" class="date"/>
+         <h5 class="status"> work</h5>
+         </div></li>
+    </div> -->
+
+
+
+    <!-- <li class="text">
+               <button class="okBtn " type="button" onclick="toggleDone(this)" aria-pressed="false"></button>
+                 <div class="title" >${task.network}</div>
+                 <input type="date" class="date" value="${task.date}"/>
+                
+                 <p class="status">${task.status}</p>
+                
+
+             </li> -->
+
+
+    <div id="addTaskModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2 class="headform">Add New Task</h2>
+            <h4 class="-head">Create a new task with details like priority, tags, and due date</h4>
+
+            <!-- Title -->
+            <label class="rightfont" style="margin-right:350px ;">title</label>
+            <input type="text" id="taskTitle" placeholder="What do you want to do?" class="input">
+            <h4 class="-head" style="margin-right:40px; ">Press Enter to add, Shift+Enter to add and stay open</h4>
+
+            <!-- Description -->
+            <label class="rightfont">Description</label>
+            <textarea id="taskDesc" placeholder="Add more details..." class="input" style="height:70px;"></textarea>
+
+            <!-- Date -->
+
+            <label class="rightfont" style="margin-right: 320px;">Due-Date</label>
+            <input type="date" id="taskDate" placeholder="mm/dd/yyyy" class="input">
+            <h4 class="-head" style="margin-right:100px; ">Pick a date or choose Today / Tomorrow</h4>
+
+            <!-- Priority -->
+
+            <label class="rightfont">Priority</label>
+            <div class="priority " style="margin-top:10px ;">
+                <div class="priority-container">
+                    <button><input type="radio" name="priority" value="Low" checked> Low</button>
+                    <button><input type="radio" name="priority" value="Medium"> Medium</button>
+                    <button><input type="radio" name="priority" value="High"> High</button>
+                </div>
+            </div>
+
+            <label class="rightfont" styrle="margin-left:-10px ;">Tags</label>
+            <input type="Tag" id="tasktag" placeholder=" Add tags..." class="input">
+            <h4 class="-head" style="margin-right:100px ;">Press Enter to add tag. Max 6 tags.</h4>
+            <!-- Status -->
+            <label class="rightfont" style="margin-left:-30px ;" >Status
+                <select name="status"id="taskStatus"   class="select">
+                    <option value="Planned" name="status">Planned</option>
+                    <option value="My day" name="status">My day</option>
+                    <option value="important" name="status">important</option>
+                </select>
+
+            </label>
+
+
+
+
+            <button onclick="saveTask()" class="add">Add Task </button>
+            <button onclick="closeAddTask()" class="Cancel">Cancel</button>
+        </div>
+    </div>
+
+
+    <script src="../js/projectt.js"></script>
+</body>
+
+</html>
