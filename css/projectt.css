@@ -171,10 +171,11 @@
     margin-bottom: 0px;
     padding: 0px;
     border: none;
-    /* height: 1px; */
+
+
+
  
    
-    
    
 }
 
@@ -419,4 +420,10 @@ border: #b6b6b6 solid 1px;
 .star.active {
   color: gold; /* اللون لما تكون النجمة مفعّلة */
   transform: scale(1.2); /* تكبر شويه لما تتفعّل */
+}
+
+
+.title.line {
+  text-decoration: line-through;
+  color: rgb(90, 90, 90);
 }
